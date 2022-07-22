@@ -1,0 +1,86 @@
+.sidebar {
+  flex: 1;
+  border-right: 0.5px solid rgb(223, 223, 223);
+  min-height: 100vh;
+
+  .top {
+    display: flex;
+    height: 7vh;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #6443ff;
+    }
+  }
+
+  hr {
+    height: 0;
+    border: none;
+    border-top: 0.5px solid rgb(223, 223, 223);
+  }
+
+  .center {
+    padding-left: 0.5rem;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .title {
+        font-size: 0.6rem;
+        font-weight: bold;
+        color: #999;
+        margin-top: 0.8rem;
+        margin-bottom: 0.3rem;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 0.3rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #ece8ff;
+        }
+
+        .icon {
+          font-size: 1.5rem;
+          color: #7451f8;
+        }
+
+        span {
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: #888;
+          margin-left: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .bottom{
+    display: flex;
+    align-items: center;
+    margin: 0.6rem;
+
+    .colorOption{
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 5px;
+      border: 1px solid #7451f8;
+      cursor: pointer;
+      margin: 0.3rem;
+
+      &:nth-child(1){
+        background-color: whitesmoke;
+      }
+      &:nth-child(2){
+        background-color: #333;
+      }
+    }
+  }
+}
